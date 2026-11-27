@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="Chính sách quyền riêng tư của DocEditAI: cách xử lý, lưu giữ và xóa dữ liệu tài liệu, AI và chuyển đổi.">
+  <title>Chính sách quyền riêng tư · DocEditAI</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/app-icon.png">
+  <style>
+:root{color-scheme:dark;--bg:#090b10;--surface:#111722;--text:#eef4ff;--body:#b1bbcd;--muted:#909eb5;--line:#ffffff12;--accent:#69a3ff;--accent-soft:#4088ff14;font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}a{color:var(--accent);text-underline-offset:4px}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}button{cursor:pointer}[hidden]{display:none!important}.container{width:min(1120px,100% - 64px);margin-inline:auto}.ambient{position:absolute;inset:0 0 auto;height:850px;pointer-events:none;z-index:-1;overflow:hidden;background:radial-gradient(ellipse at 45% 8%,#0657ff1c,transparent 56%),radial-gradient(ellipse at 93% 60%,#2166d40c,transparent 45%)}.reading-progress{position:fixed;inset:0 0 auto;height:2px;background:linear-gradient(90deg,#0055ff,#4088ff,#83b7ff);transform:scaleX(0);transform-origin:left;z-index:40}.skip-link{position:fixed;top:12px;left:12px;padding:8px 18px;border-radius:8px;background:var(--accent);color:var(--bg);z-index:50;transform:translateY(-180%)}.skip-link:focus{transform:none}.topbar{position:sticky;top:0;z-index:20;background:#090b10e8;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.topbar-inner{height:78px;display:flex;align-items:center;gap:26px}.brand{display:inline-flex;align-items:center;gap:11px;color:var(--text);font-size:19px;font-weight:700;letter-spacing:-.5px;text-decoration:none}.brand img{width:34px;height:34px;border-radius:10px}.header-nav{display:flex;align-items:center;gap:26px;margin-left:auto;font-size:13px;font-weight:500}.header-nav a{color:var(--muted);text-decoration:none}.header-nav a[aria-current]{color:var(--accent)}.header-nav a:hover{color:var(--text)}.language-control{display:none;gap:4px;padding:4px;border:1px solid var(--line);border-radius:11px;background:#ffffff04}.js .language-control{display:flex}.language-control button{border:0;background:transparent;color:var(--muted);border-radius:7px;padding:6px 12px;font-size:12px;font-weight:600;min-height:34px}.language-control button[aria-pressed="true"]{background:#4088ff22;color:#bed9ff;box-shadow:0 0 0 1px #69a3ff16}.fallback-language{margin-left:auto;font-size:13px}.js .fallback-language{display:none}.hero{text-align:center;padding:68px 0 42px}.hero-icon{display:grid;place-items:center;position:relative;width:88px;height:88px;margin:0 auto 27px;border-radius:25px;background:linear-gradient(145deg,#085bff,#0036b5);box-shadow:0 16px 65px #0055ff2b,inset 0 1px 1px #ffffff50;transform:none}.hero-icon img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-size:10px;font-weight:700;margin:6px 0 17px}.eyebrow:before{content:"";width:5px;height:5px;background:var(--accent);border-radius:50%;box-shadow:0 0 12px #69a3ff66}.hero h1{font-size:clamp(34px,5vw,54px);letter-spacing:-1.8px;line-height:1.2;margin:0;font-weight:700}.hero-description{max-width:560px;margin:18px auto 22px;font-size:15px;color:var(--body);line-height:1.8}.metadata{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.metadata .date{border:1px solid var(--line);padding:5px 12px;border-radius:7px;background:#ffffff03}.metadata .version{display:inline-flex;align-items:center;gap:7px}.version:before{content:"";width:4px;height:4px;border-radius:50%;background:#62748d}.summary{margin:0 0 48px}.summary-header{display:flex;align-items:center;gap:16px;margin-bottom:14px}.summary-header h2{margin:0;color:var(--muted);text-transform:uppercase;font-size:12px;font-weight:600;letter-spacing:1.8px;white-space:nowrap}.summary-header:after{content:"";height:1px;background:var(--line);flex:1}.summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}.summary-card{border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#131c2baa,#0f141d);padding:20px 19px;transition:border-color .2s,transform .2s}.summary-card:hover{border-color:#69a3ff40;transform:translateY(-3px)}.summary-icon{width:36px;height:36px;display:grid;place-items:center;background:var(--accent-soft);border:1px solid #4088ff16;border-radius:9px;color:var(--accent);margin-bottom:13px}.summary-icon svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.summary-card h3{font-size:15px;font-weight:600;margin:0 0 5px;color:#dce8fa}.summary-card p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}.policy-layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:44px;align-items:start;padding-bottom:72px}.toc{position:sticky;top:110px;max-height:calc(100dvh - 130px);overflow:auto;scrollbar-width:thin}.toc h2{font-size:12px;text-transform:uppercase;letter-spacing:1.7px;color:var(--muted);margin:0 0 16px;font-weight:600}.toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}.toc li{margin:0}.toc a{display:flex;align-items:baseline;gap:10px;padding:9px 0 9px 15px;margin-left:-1px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:14px;line-height:1.65;transition:color .15s,border-color .15s}.toc a:hover{color:var(--text)}.toc a[aria-current="location"]{border-left-color:var(--accent);color:var(--accent);background:linear-gradient(90deg,#4088ff0d,transparent)}.toc-number{font-size:11px;font-variant-numeric:tabular-nums;opacity:.65}.toc-contact{margin-top:26px;padding:20px 0 0 16px;border-top:1px solid var(--line);font-size:13px}.toc-contact>span{display:block;color:var(--muted);margin-bottom:3px}.toc-contact>a{display:inline-flex;gap:15px;font-weight:500;padding:0;border:0;color:var(--accent)}.policy{min-width:0;display:flex;flex-direction:column;gap:17px;overflow-wrap:anywhere}.policy-intro{padding:0 2px 9px}.policy-intro h2{font-size:20px;font-weight:600;letter-spacing:-.5px;line-height:1.4;margin:0 0 12px}.policy p,.policy li{font-size:13px;line-height:1.95;color:var(--body)}.policy p{margin:10px 0 0}.policy-intro p{margin:0}.policy strong{font-weight:600;color:#d4e0f2}.policy a:hover{color:#b4d5ff}.policy-card{padding:25px 27px 26px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(115deg,#121a27,#0f141d);scroll-margin-top:0}.policy-card h2{display:flex;align-items:baseline;gap:13px;font-size:17px;line-height:1.5;letter-spacing:-.3px;margin:0 0 14px;font-weight:600}.section-number{display:inline-grid;place-items:center;min-width:29px;height:27px;font-size:10px;letter-spacing:0;font-variant-numeric:tabular-nums;font-weight:600;border:1px solid #69a3ff1c;background:var(--accent-soft);color:var(--accent);border-radius:7px;flex-shrink:0}.policy ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:9px}.policy li{position:relative;padding:13px 15px;border:1px solid #ffffff05;border-radius:9px;background:#ffffff03}.policy-card:last-child{border-color:#69a3ff2a;background:linear-gradient(115deg,#10213c,#111722)}.contact-button{display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:10px 15px;border-radius:9px;background:#4088ff1c;border:1px solid #69a3ff28;font-size:12px;font-weight:500;text-decoration:none;margin-top:19px;overflow-wrap:anywhere}.contact-button span{font-size:19px}.footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.footer-brand{font-weight:600;color:#c0cee3}.footer a{text-decoration:none;color:var(--muted)}.footer a:hover{color:var(--accent)}.back-to-top{position:fixed;right:24px;bottom:24px;width:42px;height:42px;display:grid;place-items:center;border:1px solid #69a3ff30;background:#10213ce8;backdrop-filter:blur(10px);border-radius:12px;text-decoration:none;box-shadow:0 6px 20px #0003;font-size:20px;z-index:10}.back-to-top:hover{background:#18345b}.mobile-toc{display:none}.language-panel+.language-panel{margin-top:40px}.js .language-panel+.language-panel{margin-top:0}
+@media(min-width:1500px){.container{width:min(1180px,100% - 96px)}.policy p,.policy li{font-size:14px}.toc a{font-size:15px}}
+@media(max-width:900px){.container{width:calc(100% - 40px)}.policy-layout{grid-template-columns:195px minmax(0,1fr);gap:26px}.summary-grid{grid-template-columns:minmax(0,1fr)}.summary-card{display:grid;grid-template-columns:36px minmax(0,1fr);column-gap:12px;align-content:start}.summary-icon{grid-row:1 / 3;margin:0}.summary-card h3{padding-top:2px}.header-nav{gap:17px}.policy-card{padding:22px}.toc a{padding-left:11px;gap:7px}}
+@media(max-width:680px){html{scroll-padding-top:88px}.container{width:calc(100% - 36px)}.topbar-inner{height:68px;gap:12px}.brand{font-size:16px;gap:8px}.brand img{width:30px;height:30px}.header-nav{display:none}.language-control{margin-left:auto}.language-control button{padding:5px 9px;font-size:11px}.hero{padding:46px 0 32px}.hero-icon{width:74px;height:74px;border-radius:22px;margin-bottom:23px}.hero-icon img{width:100%;height:100%}.hero h1{font-size:34px;letter-spacing:-1.3px;max-width:340px;margin:auto}.hero-description{font-size:13px;max-width:340px;margin:15px auto 20px}.metadata{font-size:10px;gap:10px}.summary{margin-bottom:28px}.summary-grid{gap:10px}.summary-card{display:grid;padding:15px}.summary-card h3{font-size:15px;line-height:1.5;margin-bottom:7px}.summary-card p{font-size:14px}.summary-icon{margin-bottom:0}.policy-layout{display:block;padding-bottom:45px}.toc{position:static;max-height:none;margin-bottom:27px;padding:18px;border:1px solid var(--line);border-radius:12px;background:#ffffff02}.toc nav h2{margin-bottom:12px}.toc ol{columns:1;border-left:0}.toc li{break-inside:avoid}.toc a{padding:9px 0;font-size:14px;gap:7px;border:0;margin:0}.toc a[aria-current="location"]{background:none}.toc-contact{display:none}.policy{gap:13px}.policy-intro h2{font-size:19px}.policy-card{padding:20px 18px;border-radius:12px;scroll-margin-top:0}.policy-card h2{font-size:16px;gap:10px}.policy p,.policy li{font-size:13px;line-height:1.9}.policy li{padding:12px}.contact-button{font-size:11px;padding:10px 11px;gap:7px}.back-to-top{right:13px;bottom:13px;width:37px;height:37px}.footer-inner{align-items:flex-start;flex-direction:column;gap:6px;padding-right:35px}}
+@media(max-width:360px){.container{width:calc(100% - 28px)}.brand{font-size:14px}.language-control button{padding-inline:7px}.hero h1{font-size:30px}.toc ol{columns:1}.summary-card{padding:12px}.contact-button{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+@media print{:root{color-scheme:light;--text:#111;--body:#333;--muted:#555;--accent:#1256b5;--line:#ddd}body{background:#fff;color:#111}.topbar,.ambient,.summary,.toc,.back-to-top,.reading-progress,.skip-link,.footer{display:none}.container{width:100%}.hero{padding:0 0 20px}.hero-icon,.eyebrow{display:none}.hero h1{font-size:26px}.policy-layout{display:block}.policy-card,.policy-card:last-child{background:none;border-color:#ddd;break-inside:avoid;padding:15px}.policy strong{color:#111}.policy li{background:none}.policy-card h2{break-after:avoid}.contact-button{background:none}.policy a{color:#1256b5}.language-panel[hidden]{display:none!important}}
+</style>
+</head>
+<body id="top">
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a data-vi="Chuyển đến nội dung" data-en="Skip to content" class="skip-link" href="#main">Chuyển đến nội dung</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="DocEditAI"><img src="./assets/app-icon.png" width="34" height="34" alt=""><span>DocEditAI</span></a>
+      <nav class="header-nav" aria-label="Điều hướng">
+        <a data-vi="Quyền riêng tư" data-en="Privacy policy" href="#main" aria-current="page">Quyền riêng tư</a>
+        <a data-vi="Liên hệ" data-en="Contact" href="#vi-10" data-contact-link>Liên hệ</a>
+      </nav>
+      <nav class="fallback-language" aria-label="Language"><a href="#vi">Tiếng Việt</a> · <a href="#en">English</a></nav>
+      <div class="language-control" role="group" aria-label="Ngôn ngữ / Language">
+        <button type="button" lang="en" data-set-language="en" aria-pressed="false">English</button>
+        <button type="button" lang="vi" data-set-language="vi" aria-pressed="true">Tiếng Việt</button>
+      </div>
+    </div>
+  </header>
+  <main class="container" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-icon"><img src="./assets/app-icon.png" width="88" height="88" alt="Biểu tượng ứng dụng DocEditAI" fetchpriority="high"></div>
+      <p data-vi="DOCEDITAI · QUYỀN RIÊNG TƯ" data-en="DOCEDITAI · PRIVACY CENTER" class="eyebrow">DOCEDITAI · QUYỀN RIÊNG TƯ</p>
+      <h1 data-vi="Chính sách quyền riêng tư" data-en="Privacy Policy" id="page-title">Chính sách quyền riêng tư</h1>
+      <p data-vi="Hiểu cách DocEditAI xử lý tài liệu và dữ liệu của bạn, để bạn chủ động lựa chọn khi sử dụng ứng dụng." data-en="Understand how DocEditAI handles your documents and data, so you can make informed choices as you work." class="hero-description">Hiểu cách DocEditAI xử lý tài liệu và dữ liệu của bạn, để bạn chủ động lựa chọn khi sử dụng ứng dụng.</p>
+      <div class="metadata"><span class="date"><span data-vi="Cập nhật lần cuối:" data-en="Last updated:" >Cập nhật lần cuối:</span> <time datetime="2026-11-26"><span data-vi="26 tháng 11, 2026" data-en="November 26, 2026" >26 tháng 11, 2026</span></time></span><span data-vi="Phiên bản 1.0" data-en="Version 1.0" class="version">Phiên bản 1.0</span></div>
+    </section>
+    <aside class="summary" aria-labelledby="summary-title"><div class="summary-header"><h2 data-vi="Tổng quan" data-en="At a glance" id="summary-title">Tổng quan</h2></div><ul class="summary-grid"><li class="summary-card"><div class="summary-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 10V7a4 4 0 0 1 8 0v3M6 10h12v10H6zM12 14v2"/></svg></div><h3 data-vi="Không cần tài khoản" data-en="No account required" >Không cần tài khoản</h3><p data-vi="Sử dụng ứng dụng mà không cần tài khoản hoặc API key cá nhân." data-en="Use the app without an account or a personal API key." >Sử dụng ứng dụng mà không cần tài khoản hoặc API key cá nhân.</p></li><li class="summary-card"><div class="summary-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H5V3h2Zm7 0v5h5M9 12h6M9 16h4"/></svg></div><h3 data-vi="Chỉnh sửa trên thiết bị" data-en="Edit on your device" >Chỉnh sửa trên thiết bị</h3><p data-vi="Nhập, đọc và sửa thủ công được xử lý cục bộ trên thiết bị." data-en="Importing, reading, and manual editing happen locally." >Nhập, đọc và sửa thủ công được xử lý cục bộ trên thiết bị.</p></li><li class="summary-card"><div class="summary-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 16H6a4 4 0 0 1-.4-8A6.5 6.5 0 0 1 18 7a4.5 4.5 0 0 1 0 9h-2M12 20V10m-3 3 3-3 3 3"/></svg></div><h3 data-vi="Minh bạch về AI" data-en="Clear about AI" >Minh bạch về AI</h3><p data-vi="AI và chuyển đổi gửi nội dung cần xử lý tới máy chủ." data-en="AI and conversion send content to servers for processing." >AI và chuyển đổi gửi nội dung cần xử lý tới máy chủ.</p></li></ul></aside>
+    <div class="language-panel" id="vi" lang="vi" data-language="vi">
+      <div class="policy-layout">
+        <aside class="toc"><nav aria-label="Nội dung chính sách"><h2>Nội dung chính sách</h2><ol><li><a href="#vi-1"><span class="toc-number">01</span><span>Thông tin được xử lý</span></a></li><li><a href="#vi-2"><span class="toc-number">02</span><span>Dữ liệu trên thiết bị và khi nào dữ liệu rời thiết bị</span></a></li><li><a href="#vi-3"><span class="toc-number">03</span><span>Mục đích sử dụng</span></a></li><li><a href="#vi-4"><span class="toc-number">04</span><span>Bên nhận dữ liệu và dịch vụ bên thứ ba</span></a></li><li><a href="#vi-5"><span class="toc-number">05</span><span>Lưu giữ và xóa dữ liệu</span></a></li><li><a href="#vi-6"><span class="toc-number">06</span><span>Quyền truy cập trên thiết bị</span></a></li><li><a href="#vi-7"><span class="toc-number">07</span><span>Bảo mật</span></a></li><li><a href="#vi-8"><span class="toc-number">08</span><span>Lựa chọn và quyền của bạn</span></a></li><li><a href="#vi-9"><span class="toc-number">09</span><span>Trẻ em</span></a></li><li><a href="#vi-10"><span class="toc-number">10</span><span>Thay đổi và liên hệ</span></a></li></ol></nav>
+          <div class="toc-contact"><span>Cần hỗ trợ?</span><a href="mailto:cindypittman597304@gmail.com">Liên hệ với chúng tôi <span aria-hidden="true">↗</span></a></div>
+        </aside>
+        <article class="policy" aria-label="Chính sách quyền riêng tư tiếng Việt">
+          <div class="policy-intro"><h2>Quyền riêng tư của bạn, được làm rõ.</h2><p>Chính sách này giải thích cách <strong>DocEditAi</strong> (“chúng tôi”),
+        đơn vị phát hành DocEditAI cho iOS/iPadOS, xử lý thông tin khi bạn nhập, xem, chỉnh sửa,
+        tóm tắt, chuyển đổi và chia sẻ tài liệu. Liên hệ về quyền riêng tư:
+        <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>.</p></div>
+          <section class="policy-card" id="vi-1" aria-labelledby="vi-1-title"><h2 id="vi-1-title"><span class="section-number">01</span>Thông tin được xử lý</h2><ul>
+        <li><strong>Tài liệu và nội dung bạn chọn:</strong> file DOCX/PDF, tên file, văn bản,
+          hình ảnh được chèn, dữ liệu nhúng và siêu dữ liệu có sẵn trong file; bản nháp,
+          lịch sử phiên bản, bản xuất, đề xuất AI và bản tóm tắt được lưu.</li>
+        <li><strong>Yêu cầu AI:</strong> nội dung chỉ dẫn, vùng văn bản được chọn, câu trả lời làm rõ,
+          cấu trúc tiêu đề/đoạn, mã tài liệu/phiên bản và thông tin về độ đầy đủ khi trích xuất.</li>
+        <li><strong>Dữ liệu vận hành:</strong> mã yêu cầu/tác vụ, trạng thái, thời gian xử lý,
+          lỗi, model sử dụng và số token. Khi kết nối mạng, máy chủ và dịch vụ hạ tầng cũng có thể
+          nhận địa chỉ IP và thông tin kết nối tiêu chuẩn.</li>
+        <li><strong>Liên hệ hỗ trợ:</strong> địa chỉ email, nội dung và tệp đính kèm bạn tự gửi cho chúng tôi.</li>
+      </ul>
+      <p>App hiện không yêu cầu tạo tài khoản hoặc nhập API key cá nhân.
+        Thông tin cá nhân vẫn có thể xuất hiện bên trong tài liệu hoặc chỉ dẫn do bạn cung cấp.</p></section><section class="policy-card" id="vi-2" aria-labelledby="vi-2-title"><h2 id="vi-2-title"><span class="section-number">02</span>Dữ liệu trên thiết bị và khi nào dữ liệu rời thiết bị</h2><p><strong>Nhập, đọc và sửa thủ công:</strong> app sao chép tài liệu bạn chọn vào kho riêng trên thiết bị.
+        Việc nhập file qua Files hoặc Mở bằng không tự tải file lên backend. Bản nháp, phiên bản và
+        thao tác xuất Word có sẵn từ tài liệu được thực hiện cục bộ.</p>
+      <p><strong>Tính năng AI:</strong> khi bạn mở tính năng tóm tắt hoặc gửi yêu cầu chỉnh sửa AI,
+        app gửi bản trích xuất văn bản của tài liệu tới máy chủ DocEditAI. Bản gửi có thể chứa
+        văn bản toàn tài liệu và cấu trúc liên quan, <strong>kể cả khi bạn chỉ chọn một đoạn để sửa</strong>.
+        Máy chủ gửi nội dung cần thiết cho yêu cầu cùng chỉ dẫn tới dịch vụ AI để tạo kết quả.
+        Luồng AI này gửi văn bản đã trích xuất, không tải nguyên file DOCX/PDF lên dịch vụ AI.</p>
+      <p><strong>Chuyển đổi và xuất PDF:</strong> khi bạn yêu cầu chuyển PDF thành Word, app tải toàn bộ
+        PDF lên backend. Khi yêu cầu xuất PDF từ Word, app tải bản DOCX của phiên bản đã chọn lên backend.
+        File có thể chứa hình ảnh và siêu dữ liệu nhúng. Backend xử lý chuyển đổi/OCR bằng công cụ
+        trên máy chủ; bước chuyển đổi này không tự gọi model AI.</p>
+      <p><strong>Chia sẻ:</strong> app chỉ chuyển tài liệu tới ứng dụng hoặc nơi lưu trữ bạn chọn qua
+        bảng chia sẻ hệ thống. Sau đó, việc xử lý bản sao thuộc chính sách của bên nhận.</p></section><section class="policy-card" id="vi-3" aria-labelledby="vi-3-title"><h2 id="vi-3-title"><span class="section-number">03</span>Mục đích sử dụng</h2><p>Chúng tôi xử lý dữ liệu để cung cấp chức năng tài liệu bạn yêu cầu; tạo và trả kết quả AI,
+        OCR hoặc chuyển đổi; lưu tiến độ để tiếp tục tác vụ; xử lý lỗi, vận hành dịch vụ và phản hồi
+        yêu cầu hỗ trợ. App không bán dữ liệu.</p></section><section class="policy-card" id="vi-4" aria-labelledby="vi-4-title"><h2 id="vi-4-title"><span class="section-number">04</span>Bên nhận dữ liệu và dịch vụ bên thứ ba</h2><ul>
+        <li><strong>Backend DocEditAI và hạ tầng Railway:</strong> xử lý yêu cầu mạng, nội dung gửi lên,
+          tác vụ và kết quả. Backend mặc định sử dụng hạ tầng Railway.
+          Xem <a href="https://railway.com/legal/privacy">chính sách quyền riêng tư Railway</a>.</li>
+        <li><strong>RouteAPI:</strong> cổng dịch vụ AI nhận chỉ dẫn và nội dung văn bản cần thiết từ backend
+          để xử lý bằng model được cấu hình. RouteAPI có thể chuyển yêu cầu tới nhà cung cấp chạy model.
+          Theo <a href="https://www.routeapi.ai/en/trust">công bố của RouteAPI</a>, lớp gateway
+          không lưu nội dung yêu cầu/kết quả sau khi xử lý và không dùng dữ liệu khách hàng để huấn luyện;
+          vẫn giữ siêu dữ liệu vận hành và thanh toán. Hạ tầng gateway đặt tại Hồng Kông,
+          nhật ký yêu cầu chỉ chứa siêu dữ liệu được giữ 30 ngày.</li>
+        <li><strong>Bên thực sự chạy model:</strong> do kênh xử lý trên RouteAPI quyết định.
+          Điều khoản lưu giữ và huấn luyện của bên đó áp dụng riêng; cam kết của gateway không tự
+          áp dụng cho bên chạy model. Xem <a href="https://www.routeapi.ai/en/landing/llm-api-gateway">luồng xử lý dữ liệu RouteAPI</a>.</li>
+        <li><strong>Bên bạn chủ động chọn:</strong> ứng dụng nhận bản xuất, dịch vụ lưu file hoặc email hỗ trợ.</li>
+      </ul>
+      <p>Việc lưu giữ hoặc sử dụng dữ liệu để cải thiện/huấn luyện model tại nhà cung cấp AI phụ thuộc
+        các điều khoản API và thiết lập áp dụng nêu trên; chính sách này không đưa ra cam kết rằng mọi
+        nhà cung cấp đều không lưu dữ liệu hoặc không dùng dữ liệu để huấn luyện. Dịch vụ có thể xử lý
+        dữ liệu tại quốc gia khác nơi bạn cư trú. Chúng tôi cũng có thể cung cấp thông tin khi có yêu cầu
+        pháp lý bắt buộc hoặc để xử lý sự cố an toàn, trong phạm vi cần thiết và pháp luật cho phép.</p></section><section class="policy-card" id="vi-5" aria-labelledby="vi-5-title"><h2 id="vi-5-title"><span class="section-number">05</span>Lưu giữ và xóa dữ liệu</h2><p><strong>Trên thiết bị:</strong> tài liệu, phiên bản, nháp và cache được giữ để bạn sử dụng lại.
+        Trong Danh sách, vuốt tài liệu sang trái → Xóa → xác nhận để xóa mục và các bản sao nội bộ liên quan.
+        Nếu app báo lỗi dọn file, một số bản sao có thể còn trên thiết bị. Xóa app bằng chức năng
+        “Xóa ứng dụng” của iOS sẽ xóa kho dữ liệu cục bộ của app; “Gỡ bỏ ứng dụng” có thể giữ lại dữ liệu.</p>
+      <p><strong>Trên máy chủ:</strong> tác vụ tóm tắt có thể lưu nội dung đầu vào, tiến độ, kết quả
+        trung gian và kết quả cuối. Tác vụ chuyển đổi có thể lưu file đầu vào, file đầu ra và siêu dữ liệu.
+        Phiên bản dịch vụ hiện tại <strong>chưa có thời hạn xóa tự động cố định</strong>; các dữ liệu này
+        có thể tồn tại cho đến khi được quản trị viên dọn hoặc xử lý yêu cầu xóa.
+        Nhật ký kỹ thuật và bản sao lưu của hạ tầng được lưu theo cấu hình và điều khoản của dịch vụ liên quan.</p>
+      <p><strong>Xóa tài liệu trên app, hủy tác vụ hoặc xóa app không tự xóa bản đã gửi tới máy chủ hay nhà cung cấp AI.</strong>
+        Để yêu cầu xóa dữ liệu phía dịch vụ, gửi email tới <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>,
+        kèm mã yêu cầu/tác vụ nếu có và thời điểm sử dụng gần đúng. Do app không có tài khoản, chúng tôi
+        có thể cần thêm thông tin tối thiểu để xác định đúng dữ liệu. Đừng gửi toàn bộ tài liệu nhạy cảm
+        chỉ để yêu cầu xóa. File gốc trong Files, bản đã chia sẻ và bản sao lưu iCloud/thiết bị phải được
+        bạn quản lý riêng; DocEditAI không tự đồng bộ thư viện bằng một tài khoản đám mây của app.</p></section><section class="policy-card" id="vi-6" aria-labelledby="vi-6-title"><h2 id="vi-6-title"><span class="section-number">06</span>Quyền truy cập trên thiết bị</h2><p>App dùng bộ chọn tài liệu hệ thống để đọc file bạn chọn và bộ chọn ảnh hệ thống để nhận ảnh
+        bạn chọn chèn vào tài liệu. App không yêu cầu truy cập toàn bộ thư viện ảnh, danh bạ, microphone,
+        camera hoặc vị trí để cung cấp các chức năng hiện tại. Nếu bạn dùng file từ iCloud Drive hay
+        dịch vụ Files khác, nhà cung cấp đó có thể tải file về theo lựa chọn của bạn.</p></section><section class="policy-card" id="vi-7" aria-labelledby="vi-7-title"><h2 id="vi-7-title"><span class="section-number">07</span>Bảo mật</h2><p>Bản phát hành sử dụng HTTPS để kết nối backend. Tài liệu cục bộ được lưu trong vùng dữ liệu
+        riêng của app do iOS quản lý. Đây không phải mã hóa đầu cuối: backend và nhà cung cấp AI
+        cần đọc nội dung gửi tới để xử lý. Không có phương thức lưu trữ hay truyền tải nào bảo đảm
+        an toàn tuyệt đối. Chỉ gửi tài liệu mà bạn có quyền xử lý/chia sẻ và cân nhắc loại bỏ thông tin
+        nhạy cảm không cần thiết trước khi dùng các chức năng trực tuyến.</p></section><section class="policy-card" id="vi-8" aria-labelledby="vi-8-title"><h2 id="vi-8-title"><span class="section-number">08</span>Lựa chọn và quyền của bạn</h2><p>Bạn có thể sử dụng các chức năng đọc/sửa cục bộ mà không dùng AI hoặc chuyển đổi trên máy chủ;
+        ngừng dùng các chức năng trực tuyến để tránh gửi nội dung mới; xuất tài liệu; xóa bản cục bộ;
+        hoặc liên hệ yêu cầu truy cập, chỉnh sửa, xóa hay hạn chế xử lý dữ liệu trong phạm vi pháp luật áp dụng.
+        Ngừng sử dụng hoặc hủy tác vụ không thu hồi dữ liệu đã gửi. Yêu cầu về dữ liệu phía dịch vụ
+        được tiếp nhận tại <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>.</p></section><section class="policy-card" id="vi-9" aria-labelledby="vi-9-title"><h2 id="vi-9-title"><span class="section-number">09</span>Trẻ em</h2><p>DocEditAI là công cụ tài liệu thông thường, không được thiết kế riêng cho trẻ em.
+        Nếu bạn là cha mẹ/người giám hộ và cho rằng trẻ đã cung cấp dữ liệu cá nhân qua dịch vụ,
+        hãy liên hệ để chúng tôi xem xét và xử lý yêu cầu xóa phù hợp.</p></section><section class="policy-card" id="vi-10" aria-labelledby="vi-10-title"><h2 id="vi-10-title"><span class="section-number">10</span>Thay đổi và liên hệ</h2><p>Chúng tôi sẽ cập nhật chính sách khi tính năng hoặc cách xử lý dữ liệu thay đổi, và ghi ngày
+        cập nhật ở đầu trang. Với thay đổi cần thông báo hoặc xin phép theo quy định áp dụng, chúng tôi
+        sẽ thực hiện trước khi áp dụng cách xử lý mới. Mọi câu hỏi hoặc yêu cầu về quyền riêng tư:
+        <strong>DocEditAi</strong> — <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>.</p><a class="contact-button" href="mailto:cindypittman597304@gmail.com"><span aria-hidden="true">↗</span> cindypittman597304@gmail.com</a> <a class="contact-button" href="tel:+84385514788"><span aria-hidden="true">☎</span> +84385514788</a></section>
+        </article>
+      </div>
+    </div><div class="language-panel" id="en" lang="en" data-language="en">
+      <div class="policy-layout">
+        <aside class="toc"><nav aria-label="On this page"><h2>On this page</h2><ol><li><a href="#en-1"><span class="toc-number">01</span><span>Information we process</span></a></li><li><a href="#en-2"><span class="toc-number">02</span><span>On-device processing and when information leaves your device</span></a></li><li><a href="#en-3"><span class="toc-number">03</span><span>How information is used</span></a></li><li><a href="#en-4"><span class="toc-number">04</span><span>Recipients and third-party services</span></a></li><li><a href="#en-5"><span class="toc-number">05</span><span>Retention and deletion</span></a></li><li><a href="#en-6"><span class="toc-number">06</span><span>Device access</span></a></li><li><a href="#en-7"><span class="toc-number">07</span><span>Security</span></a></li><li><a href="#en-8"><span class="toc-number">08</span><span>Your choices and rights</span></a></li><li><a href="#en-9"><span class="toc-number">09</span><span>Children</span></a></li><li><a href="#en-10"><span class="toc-number">10</span><span>Changes and contact</span></a></li></ol></nav>
+          <div class="toc-contact"><span>Need a hand?</span><a href="mailto:cindypittman597304@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div>
+        </aside>
+        <article class="policy" aria-label="Privacy Policy in English">
+          <div class="policy-intro"><h2>Your privacy, clearly explained.</h2><p>This policy explains how <strong>DocEditAi</strong> (“we”), the publisher
+        of DocEditAI for iOS/iPadOS, handles information when you import, view, edit, summarize,
+        convert, and share documents. Privacy contact: <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>.</p></div>
+          <section class="policy-card" id="en-1" aria-labelledby="en-1-title"><h2 id="en-1-title"><span class="section-number">01</span>Information we process</h2><ul>
+        <li><strong>Documents and content you choose:</strong> DOCX/PDF files, filenames, text,
+          inserted images, embedded data and metadata already present in files; drafts, version
+          history, exports, and saved AI proposals and summaries.</li>
+        <li><strong>AI requests:</strong> instructions, selected text, clarification answers, heading
+          and paragraph structure, document/version identifiers, and extraction coverage information.</li>
+        <li><strong>Operational data:</strong> request/job identifiers, status, processing duration,
+          errors, model names, and token usage. Servers and infrastructure services may also receive
+          IP addresses and standard connection information when you connect.</li>
+        <li><strong>Support:</strong> your email address, message, and attachments you choose to send us.</li>
+      </ul>
+      <p>The app currently requires no account or personal API key. Documents
+        and instructions you provide may nevertheless contain personal information.</p></section><section class="policy-card" id="en-2" aria-labelledby="en-2-title"><h2 id="en-2-title"><span class="section-number">02</span>On-device processing and when information leaves your device</h2><p><strong>Importing, reading, and manual editing:</strong> the app copies selected documents into
+        its private storage on your device. Importing through Files or Open In does not automatically
+        upload the file. Drafts, versions, and sharing an existing Word document are handled locally.</p>
+      <p><strong>AI features:</strong> opening the summary feature or submitting an AI edit request sends
+        extracted document text to the DocEditAI backend. The submission may contain text and structure
+        from the <strong>entire document, even when you select only one passage for editing</strong>.
+        The backend sends text needed for the request and your instructions to the AI service to produce
+        a response. This AI workflow sends extracted text rather than the original DOCX/PDF file.</p>
+      <p><strong>Conversion and PDF export:</strong> requesting PDF-to-Word conversion uploads the entire
+        PDF to the backend. Requesting PDF export uploads the selected DOCX revision. These files may
+        include images and embedded metadata. Server tools perform conversion/OCR; conversion itself
+        does not automatically invoke an AI model.</p>
+      <p><strong>Sharing:</strong> the app sends an export to the destination you choose through the system
+        share sheet. The recipient's policies govern subsequent handling of that copy.</p></section><section class="policy-card" id="en-3" aria-labelledby="en-3-title"><h2 id="en-3-title"><span class="section-number">03</span>How information is used</h2><p>We process information to provide requested document features; generate and return AI, OCR,
+        or conversion results; retain progress so jobs can resume; troubleshoot and operate the service;
+        and answer support requests. The app does not sell data.</p></section><section class="policy-card" id="en-4" aria-labelledby="en-4-title"><h2 id="en-4-title"><span class="section-number">04</span>Recipients and third-party services</h2><ul>
+        <li><strong>DocEditAI backend and Railway infrastructure:</strong> process network requests,
+          submitted content, jobs, and results. The default backend uses Railway infrastructure.
+          See <a href="https://railway.com/legal/privacy">Railway's Privacy Policy</a>.</li>
+        <li><strong>RouteAPI:</strong> the AI gateway receives instructions and necessary document text
+          from the backend to process with the configured model. RouteAPI may forward requests to
+          the provider hosting that model. According to <a href="https://www.routeapi.ai/en/trust">RouteAPI's disclosures</a>,
+          its gateway does not retain request/response content after processing or train on customer data;
+          operational and billing metadata remain. Gateway infrastructure is in Hong Kong;
+          metadata-only request logs are retained for 30 days.</li>
+        <li><strong>Model hosting providers:</strong> depend on the RouteAPI processing channel.
+          Their retention and training terms apply separately; gateway commitments do not automatically
+          cover model hosts. See <a href="https://www.routeapi.ai/en/landing/llm-api-gateway">RouteAPI's data flow disclosure</a>.</li>
+        <li><strong>Recipients you choose:</strong> export destinations, file storage services, or support email.</li>
+      </ul>
+      <p>AI providers' retention and use of data for model improvement/training depend on the applicable
+        API terms and settings identified above. This policy does not promise that every provider has
+        zero retention or excludes all training use. Services may process information outside your country
+        of residence. We may also disclose information when legally required or to address safety incidents,
+        to the extent necessary and permitted by applicable law.</p></section><section class="policy-card" id="en-5" aria-labelledby="en-5-title"><h2 id="en-5-title"><span class="section-number">05</span>Retention and deletion</h2><p><strong>On your device:</strong> documents, revisions, drafts, and caches remain available for reuse.
+        In the document list, swipe left → Delete → confirm to remove the entry and associated internal copies.
+        Some local copies may remain if the app reports a cleanup error. Using iOS “Delete App” removes
+        the app's local data; “Offload App” may preserve it.</p>
+      <p><strong>On servers:</strong> summary jobs may retain input text, progress, intermediate outputs, and
+        final results. Conversion jobs may retain uploaded files, generated files, and metadata.
+        The current service has <strong>no fixed automatic deletion period</strong>; this data may persist
+        until an administrator removes it or handles a deletion request. Infrastructure logs and backups
+        are retained according to the relevant service configuration and terms.</p>
+      <p><strong>Deleting a local document, canceling a job, or deleting the app does not automatically erase
+        data already sent to servers or AI providers.</strong> Request service-side deletion at
+        <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>, including a request/job identifier if available and
+        the approximate time of use. Because there are no accounts, we may need minimal additional information
+        to locate the correct data. Do not send an entire sensitive document just to request deletion.
+        Manage original files, shared copies, and iCloud/device backups separately. DocEditAI does not
+        automatically synchronize your library through an app cloud account.</p></section><section class="policy-card" id="en-6" aria-labelledby="en-6-title"><h2 id="en-6-title"><span class="section-number">06</span>Device access</h2><p>The app uses the system document picker to read selected files and the system photo picker to
+        receive images you select for insertion. Current features do not request access to your entire
+        photo library, contacts, microphone, camera, or location. If you select a file in iCloud Drive or
+        another Files provider, that provider may download it according to your selection.</p></section><section class="policy-card" id="en-7" aria-labelledby="en-7-title"><h2 id="en-7-title"><span class="section-number">07</span>Security</h2><p>The release app uses HTTPS to connect to the backend. Local documents reside in the app's private
+        storage managed by iOS. This is not end-to-end encryption: the backend and AI providers need to read
+        submitted content to process it. No storage or transmission method guarantees absolute security.
+        Submit only content you are authorized to process/share, and consider removing unnecessary sensitive
+        information before using online features.</p></section><section class="policy-card" id="en-8" aria-labelledby="en-8-title"><h2 id="en-8-title"><span class="section-number">08</span>Your choices and rights</h2><p>You can use local reading/editing without AI or server conversion; stop using online features to avoid
+        new content submissions; export documents; delete local copies; or contact us to request access,
+        correction, deletion, or restriction of processing as provided by applicable law. Stopping use or
+        canceling a job does not retract information already sent. Send service-side privacy requests to
+        <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>.</p></section><section class="policy-card" id="en-9" aria-labelledby="en-9-title"><h2 id="en-9-title"><span class="section-number">09</span>Children</h2><p>DocEditAI is a general document tool and is not specifically designed for children. If you are a
+        parent or guardian and believe a child has provided personal information through the service,
+        contact us so we can review and address an appropriate deletion request.</p></section><section class="policy-card" id="en-10" aria-labelledby="en-10-title"><h2 id="en-10-title"><span class="section-number">10</span>Changes and contact</h2><p>We will update this policy when features or data practices change and show the revision date above.
+        Where applicable requirements call for notice or permission, we will provide it before applying new
+        processing practices. For privacy questions or requests, contact
+        <strong>DocEditAi</strong> — <a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com</a>.</p><a class="contact-button" href="mailto:cindypittman597304@gmail.com"><span aria-hidden="true">↗</span> cindypittman597304@gmail.com</a> <a class="contact-button" href="tel:+84385514788"><span aria-hidden="true">☎</span> +84385514788</a></section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>© 2026 <span class="footer-brand">DocEditAi</span>. <span data-vi="Bảo lưu mọi quyền." data-en="All rights reserved." >Bảo lưu mọi quyền.</span></span><a href="tel:+84385514788">+84385514788</a><a href="mailto:cindypittman597304@gmail.com">cindypittman597304@gmail.com <span aria-hidden="true">↗</span></a></div></footer>
+  <a class="back-to-top" href="#top" aria-label="Về đầu trang" hidden><span aria-hidden="true">↑</span></a>
+  <script>
+(() => {
+  const root = document.documentElement;
+  const panels = [...document.querySelectorAll('[data-language]')];
+  const languageButtons = [...document.querySelectorAll('[data-set-language]')];
+  const translatable = [...document.querySelectorAll('[data-vi][data-en]')];
+  let current = 'vi';
+  let frame = 0;
+  let navigationTarget = null;
+  let navigationTimer = 0;
+  let navigationPosition = null;
+  function languageFromHash() {
+    return /^#(vi|en)(?:-\d+)?$/.exec(location.hash)?.[1];
+  }
+  function updateReading() {
+    frame = 0;
+    const height = root.scrollHeight - window.innerHeight;
+    document.querySelector('.reading-progress').style.transform = `scaleX(${height > 0 ? Math.min(1, Math.max(0, window.scrollY / height)) : 0})`;
+    const panel = document.querySelector(`[data-language="${current}"]`);
+    const sections = [...panel.querySelectorAll('section[id]')];
+    // Use the same offset as native anchor scrolling, including on mobile.
+    const readingLine = parseFloat(getComputedStyle(root).scrollPaddingTop) + 16;
+    let active = sections[0]?.id;
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= readingLine) active = section.id;
+    }
+    if (height > 0 && window.scrollY >= height - 2) active = sections.at(-1)?.id;
+    // Keep the clicked item selected while smooth scrolling crosses other sections.
+    if (navigationTarget) active = navigationTarget;
+    for (const link of panel.querySelectorAll('.toc nav a')) {
+      if (link.hash === `#${active}`) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    }
+    document.querySelector('.back-to-top').hidden = window.scrollY < 450;
+  }
+  function setLanguage(language, updateUrl = false) {
+    navigationTarget = null;
+    navigationPosition = null;
+    clearTimeout(navigationTimer);
+    current = language === 'en' ? 'en' : 'vi';
+    for (const panel of panels) panel.hidden = panel.dataset.language !== current;
+    for (const element of translatable) element.textContent = element.dataset[current];
+    for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.setLanguage === current));
+    root.lang = current;
+    document.title = current === 'vi' ? 'Chính sách quyền riêng tư · DocEditAI' : 'Privacy Policy · DocEditAI';
+    document.querySelector('meta[name="description"]').content = current === 'vi'
+      ? 'Chính sách quyền riêng tư của DocEditAI: cách xử lý, lưu giữ và xóa dữ liệu tài liệu, AI và chuyển đổi.'
+      : 'DocEditAI Privacy Policy: how document, AI, and conversion data is processed, retained, and deleted.';
+    const contactId = `#${current}-10`;
+    document.querySelectorAll('[data-contact-link]').forEach(link => link.setAttribute('href', contactId));
+    const up = document.querySelector('.back-to-top');
+    up.setAttribute('aria-label', current === 'vi' ? 'Về đầu trang' : 'Back to top');
+    document.querySelector('.hero-icon img').alt = current === 'vi' ? 'Biểu tượng ứng dụng DocEditAI' : 'DocEditAI app icon';
+    document.querySelector('.header-nav').setAttribute('aria-label', current === 'vi' ? 'Điều hướng' : 'Navigation');
+    try { localStorage.setItem('doceditai.policy.language', current); } catch {}
+    if (updateUrl) {
+      history.replaceState(null, '', `#${current}`);
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+    updateReading();
+  }
+  let preferred;
+  try { preferred = localStorage.getItem('doceditai.policy.language'); } catch {}
+  const queryLanguage = new URLSearchParams(location.search).get('lang');
+  const initial = languageFromHash() || (['vi', 'en'].includes(queryLanguage) ? queryLanguage : null)
+    || (['vi', 'en'].includes(preferred) ? preferred : null)
+    || (navigator.language?.toLowerCase().startsWith('vi') ? 'vi' : 'en');
+  setLanguage(initial);
+  root.classList.add('js');
+  languageButtons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.setLanguage, true)));
+  function finishNavigation() {
+    clearTimeout(navigationTimer);
+    // A short section near the page end may not reach the reading line.
+    // Keep the requested section selected until the reader moves again.
+    if (navigationTarget) navigationPosition = window.scrollY;
+    updateReading();
+  }
+  function cancelNavigation() {
+    navigationTarget = null;
+    navigationPosition = null;
+    clearTimeout(navigationTimer);
+    updateReading();
+  }
+  function selectNavigationTarget(id) {
+    navigationTarget = id;
+    navigationPosition = null;
+    clearTimeout(navigationTimer);
+    navigationTimer = setTimeout(finishNavigation, 180);
+    updateReading();
+  }
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest('a[href^="#"]');
+    const id = link?.hash.slice(1);
+    if (id && id.startsWith(`${current}-`) && document.getElementById(id)?.matches('.policy-card')) {
+      selectNavigationTarget(id);
+    }
+  });
+  const scheduleReading = () => { if (!frame) frame = requestAnimationFrame(updateReading); };
+  window.addEventListener('scroll', () => {
+    if (navigationTarget && navigationPosition !== null && Math.abs(window.scrollY - navigationPosition) > 2) {
+      navigationTarget = null;
+      navigationPosition = null;
+    }
+    if (navigationTarget) {
+      clearTimeout(navigationTimer);
+      navigationTimer = setTimeout(finishNavigation, 180);
+    }
+    scheduleReading();
+  }, { passive: true });
+  window.addEventListener('scrollend', finishNavigation);
+  window.addEventListener('wheel', cancelNavigation, { passive: true });
+  window.addEventListener('touchmove', cancelNavigation, { passive: true });
+  window.addEventListener('keydown', event => {
+    if (['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '].includes(event.key)) cancelNavigation();
+  });
+  window.addEventListener('resize', cancelNavigation);
+  window.addEventListener('hashchange', () => {
+    const language = languageFromHash();
+    if (language && language !== current) {
+      setLanguage(language);
+      document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    }
+    const id = location.hash.slice(1);
+    if (document.getElementById(id)?.matches('.policy-card')) selectNavigationTarget(id);
+  });
+  if (languageFromHash()) requestAnimationFrame(() => {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target?.matches('.policy-card')) selectNavigationTarget(target.id);
+    target?.scrollIntoView();
+  });
+})();
+</script>
+</body>
+</html>

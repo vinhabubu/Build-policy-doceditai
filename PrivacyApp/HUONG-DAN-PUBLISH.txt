@@ -1,0 +1,49 @@
+DOCEDITAI — HƯỚNG DẪN XUẤT BẢN WEBSITE
+
+Website tĩnh bằng HTML/CSS/JavaScript, không cần cài thư viện hoặc chạy build.
+Màu đen, điểm nhấn xanh dương theo icon app; có hai bản ngôn ngữ Việt/Anh và giao diện mobile.
+
+CÁC FILE
+- index.html: trang chính, có đầy đủ CSS và JavaScript bên trong.
+- privacy-policy.html: bản giống index.html để giữ đường dẫn /privacy-policy.html.
+- assets/app-icon.png: icon hiện tại của app, lấy nguyên bản 180px từ AppIcon.appiconset.
+- assets/favicon.png: icon hiện tại của app, bản 60px dùng trên tab trình duyệt.
+- doceditai-privacy-site.zip: gói gồm hai trang HTML và thư mục assets, dùng để upload hosting.
+
+XEM TRÊN MÁY
+Mở index.html bằng trình duyệt.
+Ngôn ngữ mặc định theo trình duyệt, sau đó ghi nhớ lựa chọn của người đọc.
+Có thể chia sẻ URL kết thúc bằng #vi, #en, ?lang=vi hoặc ?lang=en.
+Không cần JavaScript để đọc: nếu tắt JavaScript, cả hai bản đều hiển thị.
+
+PUBLISH BẰNG CLOUDFLARE PAGES
+1. Đăng nhập https://dash.cloudflare.com/ và vào Workers & Pages.
+2. Tạo ứng dụng Pages bằng phương thức Direct Upload / Drag and drop your files.
+3. Đặt tên project, kéo file doceditai-privacy-site.zip vào ô upload và chọn Deploy.
+4. Trang được cung cấp URL dạng https://ten-project.pages.dev.
+5. Trong project, vào Custom domains > Set up a domain và nhập domain của bạn.
+6. Làm theo cấu hình DNS mà Cloudflare cung cấp và chờ domain được kích hoạt.
+   - Domain gốc, ví dụ example.com: cần thêm domain vào cùng tài khoản Cloudflare
+     và trỏ nameserver của domain về Cloudflare theo hướng dẫn.
+   - Subdomain, ví dụ privacy.example.com: có thể giữ nhà cung cấp DNS hiện tại
+     và thêm CNAME trỏ đến ten-project.pages.dev sau khi thêm Custom domain.
+7. Mở https://domain-cua-ban/ hoặc https://domain-cua-ban/privacy-policy.html.
+
+Tài liệu Cloudflare:
+https://developers.cloudflare.com/pages/get-started/direct-upload/
+https://developers.cloudflare.com/pages/configuration/custom-domains/
+
+HOSTING KHÁC
+Upload index.html, privacy-policy.html và cả thư mục assets vào thư mục public của hosting.
+Giữ nguyên đường dẫn assets cạnh hai file HTML để hiển thị icon ứng dụng.
+Không upload file hướng dẫn này nếu không muốn nó xuất hiện trên hosting.
+Không cần backend, biến môi trường, API key hoặc cấu hình build.
+
+CẬP NHẬT
+Hai file HTML hiện giống nhau. Khi sửa nội dung, cập nhật đồng thời cả hai file.
+Tạo lại ZIP gồm index.html, privacy-policy.html và thư mục assets trước khi upload bản mới.
+Tên ứng dụng trong nội dung giữ DocEditAI; đơn vị phát hành là DocEditAi.
+Email liên hệ: cindypittman597304@gmail.com.
+Số điện thoại liên hệ: +84385514788.
+
+Website chưa được triển khai hoặc gắn domain trong tác vụ này.
